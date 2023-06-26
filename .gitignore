@@ -1,0 +1,19 @@
+# Dependency directory
+node_modules
+package-lock.json
+
+# Debug log from npm
+npm-debug.log
+
+# Environment Variables should NEVER be published
+.env
+
+# SASS -> CSS map
+style.css.map
+trivia.css.map
+login.css.map
+profile.css.map
+home.css.map
+
+# Notes
+testTrivia.js
