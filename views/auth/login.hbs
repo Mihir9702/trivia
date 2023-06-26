@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="stylesheets/login.css">
+
+<body class="login-body">
+  
+
+<div class="page">
+   <div class="left">
+     <h1>Login</h1>
+      <h5>Don't have an account?<a href="/signup">Signup</a></h5>
+   </div>
+
+   <div class="right">
+      {{#if errorMessage}}
+        <h4>{{errorMessage}}</h4>
+      {{/if}}
+      <form action="/login" method="post">
+         <input type="text" name="username" placeholder="Username">
+         <input type="password" name="password" placeholder="Password">
+         <button type="submit">Login</button>
+      </form>
+   </div>
+</div>
+
+</body>

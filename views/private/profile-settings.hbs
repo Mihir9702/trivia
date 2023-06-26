@@ -1,0 +1,51 @@
+{{!-- <form action="/profile/{{_id}}/edit" method="post">
+
+   <label> Username
+      <input type="text" name="username" value="{{username}}" required>
+   </label>
+
+   <label> Password
+      <input type="password" name="password">
+   </label>
+
+   <label> @
+      <input type="text" name="handlename" value="{{handlename}}">
+   </label>
+
+   <button type="submit">Submit</button>
+
+</form> --}}
+
+
+<link rel="stylesheet" href="/stylesheets/login.css">
+
+<body class="login-body">
+
+<div class="page">
+   <div class="left">
+      <h1>{{username}}</h1>
+   </div>
+
+   <div class="right">
+      {{#if errorMessage}}
+        <h4>{{errorMessage}}</h4>
+      {{/if}}
+      <form action="/profile/{{_id}}/edit" method="post">
+         <input type="text" name="username" value="{{username}}">
+
+         <input type="password" name="password">
+
+         <label> 
+            <input type="text" name="handlename" value="{{handlename}}">
+         </label>
+
+         <button type="submit">Save Settings</button>
+      </form>
+   </div>
+
+   <div class="delete-account-container">
+      <a href="/profile/{{_id}}/delete">Delete Account</a>
+   </div>
+</div>
+
+</body>

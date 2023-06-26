@@ -1,0 +1,143 @@
+html {
+  overflow-wrap: hidden;
+  overflow: hidden;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.page {
+  padding: 200px 600px;
+  position: absolute;
+  background: #e2e2e5;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.left {
+  padding: 180px 200px;
+  position: relative;
+  background: white;
+  top: -50px;
+  left: 120px;
+  border-radius: 12px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.left h1 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+.left h5 {
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  left: 100px;
+  bottom: 0;
+  color: #474a59;
+}
+.left h5 a {
+  text-decoration: none;
+  color: #2892d7;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 100ms ease-in;
+}
+.left h5 a:hover {
+  color: #8aa7b5;
+}
+
+.right h4 {
+  position: absolute;
+  right: 365px;
+  top: 250px;
+  z-index: 31;
+  color: white;
+}
+.right form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #474a59;
+  color: #8aa7b5;
+  padding: 200px 150px 250px 150px;
+  position: relative;
+  left: 50px;
+  border-radius: 10px;
+}
+.right input {
+  margin: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #30323d;
+  color: #c2c2c5;
+  font-size: 18px;
+}
+.right input:focus {
+  outline: none;
+}
+.right #user {
+  position: absolute;
+  width: 200px;
+  margin-bottom: 100px;
+}
+.right #pass {
+  position: absolute;
+  margin-top: 200px;
+  width: 200px;
+}
+.right button {
+  position: absolute;
+  bottom: 50px;
+  font-size: 24px;
+  font-family: "monospace", cursive;
+  cursor: pointer;
+  border: none;
+  padding: 8px 40px;
+  transform: scale(0.7);
+  border-radius: 3px;
+  color: white;
+  background: #173753;
+  z-index: 22;
+  transition: background 200ms ease;
+}
+.right button:hover {
+  background: #081419;
+}
+
+.delete-account-container a {
+  cursor: pointer;
+  color: #ff1a1a;
+  text-decoration: none;
+  padding: 12px;
+  border: 1px solid #ff1a1a;
+  transition: color 200ms ease-in;
+  transition: background 200ms ease-in;
+}
+.delete-account-container a:hover {
+  color: white;
+  background: #ff1a1a;
+}
+
+@media (max-width: 1200px) {
+  html {
+    background: #e2e2e5;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

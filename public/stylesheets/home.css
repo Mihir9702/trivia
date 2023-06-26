@@ -1,0 +1,362 @@
+@keyframes cta {
+  0% {
+    padding: 12px;
+  }
+  100% {
+    padding: 20px;
+  }
+}
+html {
+  overflow-x: hidden;
+  min-height: 100%;
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+button {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+}
+
+.nav-links {
+  word-spacing: 10px;
+  text-align: right;
+}
+
+.fa-solid {
+  position: relative;
+  top: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+}
+.fa-solid:hover {
+  color: #173753;
+}
+
+.fa-house {
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+}
+
+header {
+  padding: 100px;
+  background: #006bff;
+  position: relative;
+}
+header .title {
+  user-select: none;
+}
+header .title h1 {
+  color: white;
+}
+header .title img {
+  filter: brightness(0) invert(1);
+}
+header h1 {
+  position: absolute;
+  font-family: "Mogra", cursive;
+}
+header img {
+  position: absolute;
+  transform: scale(0.5);
+  top: 0;
+  left: -60px;
+  z-index: 3;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  padding-top: 100px;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 60%;
+  width: 60%;
+  height: 100%;
+  transform: translate(80%, 45%);
+  background-color: #5e2bff;
+  z-index: 1;
+  box-shadow: 19px -12px 2px rgba(0, 0, 0, 0.8);
+}
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 60%;
+  height: 100%;
+  padding-bottom: 100px;
+  background-color: #006bff;
+  transform: translate(-20%, 30%) scale(1.2);
+  z-index: 3;
+  box-shadow: -1px 11px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cta-trivia {
+  background: #5e2bff;
+  position: relative;
+  top: 50px;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 100px;
+}
+.cta-trivia .cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+}
+.cta-trivia h1 {
+  position: absolute;
+  bottom: 100px;
+  color: white;
+  white-space: nowrap;
+  font-family: "Mogra", cursive;
+  font-size: 32px;
+}
+.cta-trivia a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 12px;
+  background: #54c6eb;
+  transition: background 100ms ease;
+  font-weight: bold;
+}
+.cta-trivia a:hover {
+  background: #173753;
+  color: white;
+}
+.cta-trivia a:focus {
+  animation: cta 100ms ease;
+}
+.cta-trivia .cta-curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.cta-trivia .cta-curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 80%;
+  width: 60%;
+  height: 100%;
+  transform: translate(80%, 45%);
+  background: #83bcff;
+  z-index: 1;
+  box-shadow: 20px -13px 2px rgba(0, 0, 0, 0.8);
+}
+.cta-trivia .cta-curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 60%;
+  height: 100%;
+  padding-bottom: 100px;
+  background: #5e2bff;
+  transform: translate(-20%, 30%) scale(1.2);
+  z-index: 22;
+  box-shadow: -3px 14px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cta {
+  background: #83bcff;
+  position: relative;
+  top: 50px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.cta .cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+}
+.cta h1 {
+  position: absolute;
+  bottom: 100px;
+  white-space: nowrap;
+  color: black;
+  font-family: "Mogra", cursive;
+  font-size: 32px;
+}
+.cta a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 12px;
+  background: #54c6eb;
+  transition: background 100ms ease-in;
+  font-weight: bold;
+}
+.cta a:hover {
+  background: #173753;
+  color: white;
+}
+.cta a:focus {
+  animation: cta 100ms ease;
+}
+.cta .cta-curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.cta .cta-curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 80%;
+  width: 60%;
+  height: 100%;
+  transform: translate(80%, 45%);
+  background-color: #83bcff;
+  z-index: 5;
+  box-shadow: 10px 20px 2px rgba(0, 0, 0, 0.8);
+}
+.cta .cta-curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 60%;
+  height: 100%;
+  padding-bottom: 100px;
+  background-color: #83bcff;
+  transform: translate(-20%, 40%) scale(1.2);
+  z-index: 5;
+  box-shadow: -14px 19px 2px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
+  position: relative;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: 350px;
+  height: 100vh;
+  text-align: right;
+  background: #444;
+  box-shadow: black -6px -11px 5px 4px inset;
+}
+.footer-container .footer-content {
+  position: absolute;
+  text-align: center;
+  z-index: 33;
+  bottom: 0;
+  right: 0;
+  transform: translate(-100%);
+}
+.footer-container .footer-content .footer-links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-container .footer-content .footer-links h4 {
+  position: relative;
+  background: transparent;
+  white-space: nowrap;
+  font-size: 30px;
+  color: white;
+  font-family: "Mogra", cursive;
+  bottom: 40px;
+}
+.footer-container .footer-content .footer-links a {
+  margin-left: 30px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+.footer-container .footer-content .footer-links a:hover {
+  color: #6daedb;
+}
+
+@media (min-width: 480px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+  }
+  header .title {
+    width: 100vw;
+    overflow: hidden;
+  }
+  header .title h1 {
+    z-index: 33;
+    position: absolute;
+    left: 100px;
+  }
+  header .title img {
+    z-index: 34;
+  }
+  header .curve::after {
+    left: -50px;
+  }
+  header .curve::before {
+    left: -50px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
